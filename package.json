@@ -1,0 +1,44 @@
+{
+  "name": "redis-pub-sub-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc  & node dist/server.js",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "lint": "eslint src --ext ts",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mysql": "^2.15.15",
+    "@types/redis": "^2.8.28",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "express-validator": "^6.7.0",
+    "https-proxy-agent": "^5.0.0",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2",
+    "redis-messaging-manager": "^1.5.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.20",
+    "@types/express": "^4.11.1",
+    "@types/ioredis": "^3.2.7",
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.22",
+    "eslint": "4.0.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-promise": "3.5.0",
+    "typescript": "^2.7.1",
+    "typescript-eslint-parser": "3.0.0"
+  }
+}
